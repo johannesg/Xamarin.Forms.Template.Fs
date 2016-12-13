@@ -17,7 +17,7 @@ let nunitRunnerPath = "packages/test/NUnit.ConsoleRunner/tools/nunit3-console.ex
 //       ++ "src//**/*.fsproj"
 
 let appReferences  =
-    !! "printr.sln"
+    !! "src/Hello.sln"
 
 // version info
 let version = "0.1"  // or retrieve from CI server

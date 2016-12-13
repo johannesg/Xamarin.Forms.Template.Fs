@@ -1,0 +1,5 @@
+source https://www.nuget.org/api/v2
+nuget fake
+nuget FSharp.Core
+nuget Xamarin.Forms
+nuget Xamarin.Android.FSharp.ResourceProvider

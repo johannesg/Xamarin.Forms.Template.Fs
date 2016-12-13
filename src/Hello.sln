@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{9A20126E-126E-4DEE-BAFE-989FCFBCB3FC}"
+	ProjectSection(SolutionItems) = preProject
+		..\paket.dependencies = ..\paket.dependencies
+	EndProjectSection
+EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Hello", "Hello\Hello.fsproj", "{BE1FB741-5A7E-4126-93F3-1B33E401A474}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Hello.iOS", "Hello.iOS\Hello.iOS.fsproj", "{BAB39F96-3CE6-4314-BCDF-E02DC5C48593}"

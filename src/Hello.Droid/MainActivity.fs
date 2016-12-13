@@ -9,6 +9,8 @@ open Android.Runtime
 open Android.Views
 open Android.Widget
 
+type Resources = Hello.Droid.Resource
+
 [<Activity (Label = "Hello.Droid", MainLauncher = true)>]
 type MainActivity () =
     inherit Activity ()
@@ -20,10 +22,10 @@ type MainActivity () =
         base.OnCreate (bundle)
 
         // Set our view from the "main" layout resource
-        this.SetContentView (Resource_Layout.Main)
+        this.SetContentView (Resources.Layout.Main)
 
         // Get our button from the layout resource, and attach an event to it
-        let button = this.FindViewById<Button>(Resource_Id.MyButton)
+        let button = this.FindViewById<Button>(Resources.Id.MyButton)
         button.Click.Add (fun args -> 
             button.Text <- sprintf "%d clicks!" count
             count <- count + 1
