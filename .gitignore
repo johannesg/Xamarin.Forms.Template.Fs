@@ -1,0 +1,12 @@
+.fake/
+.paket/paket.exe
+.vs/
+packages/
+build/
+deploy/
+**/bin/Debug
+**/obj/Debug
+**/bin/Release
+**/obj/Release
+paket-files/
+tests/
