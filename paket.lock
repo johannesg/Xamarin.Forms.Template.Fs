@@ -1,6 +1,6 @@
 NUGET
   remote: https://www.nuget.org/api/v2
-    FAKE (4.46.1)
+    FAKE (4.47)
     FSharp.Core (4.0.0.1)
     WPtoolkit (4.2013.8.16) - framework: wpv8.0
     Xamarin.Android.FSharp.ResourceProvider (1.0.0.13)

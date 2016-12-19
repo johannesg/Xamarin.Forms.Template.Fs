@@ -57,9 +57,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="README_FIRST.txt">
-      <Paket>True</Paket>
-    </Content>
     <Resource Include="Toolkit.Content\ApplicationBar.Add.png">
       <Paket>True</Paket>
     </Resource>
@@ -76,7 +73,7 @@
       <Paket>True</Paket>
     </Resource>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="PortableLibrary1.fs" />
+    <Compile Include="App.fs" />
     <None Include="Script.fsx" />
     <None Include="paket.references" />
   </ItemGroup>

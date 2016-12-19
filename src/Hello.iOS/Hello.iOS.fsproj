@@ -131,9 +131,6 @@
       <Paket>True</Paket>
     </Resource>
     <None Include="Info.plist" />
-    <Content Include="README_FIRST.txt">
-      <Paket>True</Paket>
-    </Content>
     <Content Include="Entitlements.plist" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <Compile Include="AppDelegate.fs" />
@@ -146,6 +143,13 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hello\Hello.fsproj">
+      <Name>Hello</Name>
+      <Project>{be1fb741-5a7e-4126-93f3-1b33e401a474}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == 'WindowsPhone' And $(TargetFrameworkVersion) == 'v8.0'">

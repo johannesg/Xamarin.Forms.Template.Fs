@@ -9,11 +9,13 @@ open Android.Runtime
 open Android.Views
 open Android.Widget
 
+open Hello
+
 type Resources = Hello.Droid.Resource
 
-[<Activity (Label = "Hello.Droid", MainLauncher = true)>]
+[<Activity (Label = "Hello.Droid", Icon = "@drawable/icon",  MainLauncher = true)>]
 type MainActivity () =
-    inherit Activity ()
+    inherit Xamarin.Forms.Platform.Android.FormsApplicationActivity()
 
     let mutable count:int = 1
 
@@ -21,15 +23,7 @@ type MainActivity () =
 
         base.OnCreate (bundle)
 
-        // Set our view from the "main" layout resource
-        this.SetContentView (Resources.Layout.Main)
-
-        // Get our button from the layout resource, and attach an event to it
-        let button = this.FindViewById<Button>(Resources.Id.MyButton)
-        button.Click.Add (fun args -> 
-            button.Text <- sprintf "%d clicks!" count
-            count <- count + 1
-        )
-
+        Xamarin.Forms.Forms.Init(this, bundle)
+        this.LoadApplication(new App())
 
 

@@ -64,9 +64,6 @@
     </When>
   </Choose>
   <ItemGroup>
-    <Content Include="README_FIRST.txt">
-      <Paket>True</Paket>
-    </Content>
     <Resource Include="Toolkit.Content\ApplicationBar.Add.png">
       <Paket>True</Paket>
     </Resource>
@@ -184,6 +181,13 @@
       <Private>True</Private>
       <Paket>True</Paket>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hello\Hello.fsproj">
+      <Name>Hello</Name>
+      <Project>{be1fb741-5a7e-4126-93f3-1b33e401a474}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == 'MonoAndroid'">
